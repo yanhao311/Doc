@@ -75,6 +75,10 @@
 使用一下命令推送最新修改
   git push origin master
 
+3.克隆
+开始一个项目时，通常首先在github上创建一个仓库，然后克隆下来。
+  git clone git@github.com:yanhao311/Doc.git
+执行完上述操作后，目录会新增一个Doc文件夹。
 
 ===================常见问题解决办法==================
 
