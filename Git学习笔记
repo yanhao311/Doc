@@ -80,6 +80,32 @@
   git clone git@github.com:yanhao311/Doc.git
 执行完上述操作后，目录会新增一个Doc文件夹。
 
+
+==================git分支======================
+
+1.创建/切换分支
+创建dev分支
+  git branch dev
+切换到dev分支
+  git checkout dev
+创建并切换分支
+  git checkout -b dev
+
+2. 查看分支
+  git branch
+
+3. 合并分支
+将某个分支合并到当前分支：
+  git merge dev
+
+4. 删除分支
+	git brand -d dev
+
+
+
+
+
+
 ===================常见问题解决办法==================
 
 1. Git bash中文全部显示为 \347\256\227\346\263\225.txt
