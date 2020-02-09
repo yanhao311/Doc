@@ -1,0 +1,69 @@
+
+1. 添加1920x1080分辨率
+
+  a) 添加分辨率 /etc/profile
+				xrandr --newmode "1920x1080_60.00" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
+				xrandr --addmode Virtual1 "1920x1080_60.00"
+  
+  b) 生效
+  			sudo source /etc/profile
+  			
+2. 设置系统时间
+				timedatectl set-ntp true
+  			
+3. 配置源
+
+  a) 修改文件 /etc/pacman.conf, 添加
+  			[archlinuxcn]
+				SigLevel = Optional TrustedOnly
+				Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+				
+  b) 同步
+  			sudo pacman -Syy
+  
+  c) 导入GPG Key
+				sudo pacman -S archlinuxcn-keyring
+
+4. 更新本地软件
+				sudo pacman -Syu
+				
+5. 安装谷歌浏览器
+				sudo pacman -S google-chrome
+				
+6. 安装谷歌输入法（搜狗输入法依赖fcixt-qt4, 已被arch官方库移除）
+
+  a) 安装
+				sudo pacman -S fcitx-im #默认全部安装
+				sudo pacman -S fcitx-configtool
+				sudo pacman -S fcitx-googlepinyin
+				
+  b) 配置文件 ~/.xprofile
+				export GTK_IM_MODULE=fcitx
+				export QT_IM_MODULE=fcitx
+				export XMODIFIERS="@im=fcitx"
+
+  c) 生效
+  			source ~/.xprofile
+  			
+7. 安装wps
+
+  a) 安装wps程序
+				sudo pacman -S wps-office-cn wps-office-mui-zh-cn
+				
+  b) 打开wps配置为中文即可
+  			
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
