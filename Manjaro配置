@@ -51,6 +51,22 @@
 				sudo pacman -S wps-office-cn wps-office-mui-zh-cn
 				
   b) 打开wps配置为中文即可
+  
+  
+  ===========================================常见问题及解决办法======================================
+  
+  1. 电脑突然不能上网
+  
+  （1）检查NetworkManager.service是否运行，可尝试重启
+  
+           启动： systemctl start NetworkManager.service
+           停止：systemctl stop NetworkManager.service
+           查看状态：systemctl status NetworkManager.service
+           重启：systemctl restart NetworkManager.service
+           
+   （2）关闭NetworkManager.service，
+             删除NetworkManager.service配置文件，/var/lib/NetworkManager/NetworkManager.state
+             启动NetworkManager.service
     
   			
 
