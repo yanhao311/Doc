@@ -1,0 +1,15 @@
+
+(1) 下载
+    pacman -Sy git
+
+(2) 设置用户名
+    git config --global user.name "UsrName"
+
+(3) 设置邮箱
+    git config --global user.email "email"
+
+(4) 克隆仓库
+    git clone https://github.com/yanhao311/Doc.git
+
+(5)
+(6)
